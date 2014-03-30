@@ -1,4 +1,4 @@
-# feathers-orm-service [![Build Status](https://travis-ci.org/Glavin001/feathers-orm-service.png?branch=master)](https://travis-ci.org/Glavin001/feathers-orm-service)
+# [feathers-orm-service](https://github.com/Glavin001/feathers-orm-service) [![Build Status](https://travis-ci.org/Glavin001/feathers-orm-service.png?branch=master)](https://travis-ci.org/Glavin001/feathers-orm-service) [![Code Climate](https://codeclimate.com/github/Glavin001/feathers-orm-service.png)](https://codeclimate.com/github/Glavin001/feathers-orm-service)
 
 > Easily create a Object Relational Mapping Service for Featherjs.
 
