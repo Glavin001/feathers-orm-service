@@ -22,7 +22,7 @@
     "email": "",
     "url": "https://github.com/Glavin001"
   },
-  "contributors": [ ],
+  "contributors": [],
   "bugs": {
     "url": "https://github.com/Glavin001/feathers-orm-service/issues"
   },
@@ -36,9 +36,7 @@
   "directories": {
     "lib": "lib"
   },
-  "dependencies": {
-
-  },
+  "dependencies": {},
   "devDependencies": {
     "mocha": "*",
     "grunt-cli": "~0.1.7",
@@ -46,9 +44,15 @@
     "grunt-release": "~0.5.1",
     "grunt-contrib-jshint": "~0.x",
     "grunt-simple-mocha": "~0.4.0",
-    "grunt-contrib-watch": "^0.5.3"
+    "grunt-contrib-watch": "^0.5.3",
+    "sequelize": "^1.7.0",
+    "mysql": "^2.1.1",
+    "supertest": "^0.10.0",
+    "feathers": "^0.3.2",
+    "async": "^0.6.0"
   },
   "peerDependencies": {
-    "feathers": "~0.3.0"
+    "feathers": "^0.3.0",
+    "sequelize": "^1.7.0"
   }
 }

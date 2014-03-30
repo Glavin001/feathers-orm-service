@@ -15,6 +15,9 @@ module.exports = function (grunt) {
         },
         simplemocha: {
             all: {
+                options: {
+                    clearRequireCache: true
+                },
                 src: ['test/**/*.test.js']
             }
         },
@@ -23,6 +26,7 @@ module.exports = function (grunt) {
                 files: ['lib/**.*.js', 'test/**/*.js', 'Gruntfile.js', '.jshintrc'],
                 tasks: ['jshint', 'simplemocha'],
                 options: {
+                    spawn: true
                 }
             }
         }

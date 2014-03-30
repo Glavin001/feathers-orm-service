@@ -10,21 +10,35 @@ To install feathers-orm-service from [npm](https://www.npmjs.org/), run:
 $ npm install feathers-orm-service --save
 ```
 
-Finally, to use the plugin in your Feathers app:
-
-```javascript
-// Require
-var feathers = require('feathers');
-var plugin = require('feathers-orm-service');
-// Setup
-var app = feathers();
-// Use Plugin
-app.configure(plugin({ /* configuration */ }));
-```
+See [Getting Started, in the docs/ directory](https://github.com/feathersjs/feathers-mongoose-service/tree/master/docs/Getting-Started.md).
 
 ## Documentation
 
 See the [docs](docs/).
+
+## Developing
+
+See the [lib](lib/) directory.
+
+### Run
+
+```bash
+grunt
+```
+
+### Testing
+
+#### Create Database, `feathers-orm-service`
+
+```bash
+mysql -e 'create database feathers-orm-service'
+```
+
+#### Run Grunt Tests
+
+```bash
+grunt test
+```
 
 ## Author
 
