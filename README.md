@@ -10,15 +10,17 @@ To install feathers-orm-service from [npm](https://www.npmjs.org/), run:
 $ npm install feathers-orm-service --save
 ```
 
-See [Getting Started, in the docs/ directory](https://github.com/feathersjs/feathers-mongoose-service/tree/master/docs/Getting-Started.md).
+See [Getting Started, in the docs/ directory](https://github.com/Glavin001/feathers-orm-service/blob/master/docs/Getting-Started.md).
+
+I recommend that you also examine the [example source code in the examples/ directory](https://github.com/Glavin001/feathers-orm-service/tree/master/examples).
 
 ## Documentation
 
-See the [docs](docs/).
+See the [docs/](docs/) directory.
 
 ## Developing
 
-See the [lib](lib/) directory.
+See the [lib/](lib/) directory.
 
 ### Run
 
