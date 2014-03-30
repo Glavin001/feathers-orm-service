@@ -1,6 +1,6 @@
 {
   "name": "feathers-orm-service",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Easily create a Object Relational Mapping Service for Featherjs.",
   "homepage": "https://github.com/Glavin001/feathers-orm-service",
   "keywords": [

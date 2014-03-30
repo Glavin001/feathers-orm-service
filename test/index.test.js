@@ -2,6 +2,7 @@ var assert = require('assert');
 var request = require('supertest');
 var feathers = require('feathers');
 var async = require('async'); // jshint unused: false
+var path = require('path');
 //
 var Sequelize = require('sequelize');
 var ormService = require('../lib');
@@ -19,6 +20,7 @@ var sequelize = new Sequelize(database, username, password, {
     dialect: dialect
 });
 
+
 // Create a new service
 var name = 'Todo';
 var attributes = {
@@ -30,6 +32,8 @@ var options = {
     tableName: 'todos'
 };
 var todoService = ormService(name, attributes, options, sequelize);
+
+var todoImportedService = ormService(path.resolve(__dirname, '../examples/todo_model'), sequelize);
 
 describe('Basic CRUD tests', function () {
 
@@ -70,6 +74,36 @@ describe('Basic CRUD tests', function () {
         var app = feathers();
         // Add Service
         app.use('/todo', todoService);
+        // Sync
+        sequelize.sync()
+        .complete(function() {
+            // Start Server
+            var server = app.listen(port, function() {
+
+                request(server)
+                    .get('/todo')
+                    .expect(200)
+                    .end(function(err,res) { // jshint unused: false
+                        //console.log(res.body);
+                        if (err) {
+                            return done(err);
+                        }
+
+                        server.close(done);
+                    });
+            
+            });
+
+        });
+
+    });
+
+
+    it('should read all Todos with imported model', function(done) {
+
+        var app = feathers();
+        // Add Service
+        app.use('/todo', todoImportedService);
         // Sync
         sequelize.sync()
         .complete(function() {
