@@ -30,10 +30,10 @@ grunt
 
 ### Testing
 
-#### Create Database, `feathers-orm-service`
+#### Create Database, `feathers_orm_service`
 
 ```bash
-mysql -e 'create database feathers-orm-service'
+mysql -e 'create database feathers_orm_service'
 ```
 
 #### Run Grunt Tests

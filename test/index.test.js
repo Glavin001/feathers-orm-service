@@ -9,7 +9,7 @@ var ormService = require('../lib');
 // Config
 var port = 8080;
 // Setup for Travis CI: http://docs.travis-ci.com/user/database-setup/#MySQL
-var database = 'feathers-orm-service';
+var database = 'feathers_orm_service';
 var username = 'root';
 var password = null; // Blank
 var dialect = 'mysql';
